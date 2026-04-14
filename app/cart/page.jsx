@@ -21,7 +21,6 @@ const itemVariants = {
 };
 
 const CartPage = () => {
-  // ডামি কার্ট ডেটা (বাস্তবে এটি Redux বা Context API থেকে আসবে)
   const [cartItems, setCartItems] = useState([
     {
       id: 1,
@@ -29,7 +28,7 @@ const CartPage = () => {
       price: 3500,
       quantity: 1,
       size: "M",
-      img: "/panjabi1.jpg", // আপনার আগের ফাইল থেকে
+      img: "/panjabi1.jpg",
     },
     {
       id: 2,
@@ -37,13 +36,13 @@ const CartPage = () => {
       price: 2200,
       quantity: 2,
       size: "L",
-      img: "/panjabi2.jpg", // আপনার আগের ফাইল থেকে
+      img: "/panjabi2.jpg", 
     },
   ]);
 
   // কোয়ান্টিটি পরিবর্তন করার ফাংশন
   const updateQuantity = (id, newQuantity) => {
-    if (newQuantity < 1) return; // ১ এর নিচে নামবে না
+    if (newQuantity < 1) return; 
     setCartItems(
       cartItems.map((item) =>
         item.id === id ? { ...item, quantity: newQuantity } : item
