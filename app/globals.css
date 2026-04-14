@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-  /* এখানে আপনি আপনার ব্র্যান্ডের কাস্টম কালার যোগ করতে পারেন */
   --color-primary: #1a1a1a;
   --color-secondary: #f5f5f5;
 }
